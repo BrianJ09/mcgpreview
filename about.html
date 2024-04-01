@@ -1,0 +1,162 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="MCGLOGO.png">
+        <title>MCG</title>
+        <link rel="stylesheet" href="mcg.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+    
+    <body>
+        <header>
+            <nav>
+            <div class="navbar">
+                <img src="mcglogotranspbg.png" class="logo">
+               <h1 class="normTitle">
+                   MALAYALAM CHARISMATIC GROUP
+                </h1>
+                <h1 class="altTitle">MCG</h1>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#abs">About Us</a></li>
+                        <li><a href="#prog">Programmes</a></li>
+                        <li><a href="#exp">Experiences</a></li>
+                        <li><a href="#con">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+            </nav>
+        </header>
+        <section class="home" id="home">
+            <div class="imgslider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <div class="slide first">
+                        <img src="MCGSLIDE1.jpeg" class="slide1">
+                    </div>
+                    <div class="slide second">
+                        <img src="MCGSLIDE2.jpeg" class="slide2">
+                    </div>
+                    <div class="slide third">
+                        <img src="MCGSLIDE3.jpeg" class="slide3">
+                    </div>
+                    <div class="slide fourth">
+                        <img src="MCGSLIDE4.jpeg" class="slide4">
+                    </div>
+                    
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter ++;
+                    if (counter>4){
+                        counter= 1;
+                    }
+                }, 5000)
+            </script>
+        </section>
+        <section class="divider"><div class="designdiv"></div></section>
+        <section class="shortabtus">
+            <div class="headerabtus">
+                <h2>
+                    Transforming lives through
+                </h2>
+                <h4>faith</h4>
+            </div>
+            <div class="row">
+                <div class="abtuscol1">
+                    <h3>PRAYER</h3>
+                    <p>Empowering ourselves to strengthen our relationship with God through prayer</p>
+                </div>
+                <div class="abtuscol2">
+                    <h3>COMMUNITY</h3>
+                    <p>Embracing our differences and gathering as one to collectively build our faith</p>
+                </div>
+                <div class="abtuscol3">
+                    <h3>PURPOSE</h3>
+                    <p>Moving forward together to be the best followers of Christ</p>
+                </div>
+            </div>
+        </section>
+        <section class="divider"><div class="designdiv"></div></section>
+        <section class="shortprog">
+            <div class="row2">
+                <h2>PROGRAMMES</h2>
+                <div class="progcol1">
+                    <h5>Retreats</h5>
+                    <p1>Stay-in | Praise &amp; Worship | Prayer | Adoration
+                        Holy Mass | Rosary | Inspirational Talks | Spiritual Refining</p1>
+                </div>
+                <div class="progcol2">
+                    <h5>Night Vigils</h5>
+                    <p1>Praise &amp; Worship | Prayer | Holy Mass | Way of the Cross | Intercession</p1>
+                </div>
+                <div class="progcol3">
+                    <h5>Sunday Divine Mercy</h5>
+                    <p1>Prayer | Praise &amp; Worship | Online</p1>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footnavbar">
+                <div class="logodiv">
+                <img src="MCGFOOTERLOGO.png" class="footlogo">
+                </div>
+                <div class="footnav-links">
+                    <ful>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#abs">About Us</a></li>
+                        <li><a href="#prog">Programmes</a></li>
+                        <li><a href="#exp">Experiences</a></li>
+                        <li><a href="#con">Contact</a></li>
+                    </ful>
+                </div>
+                <div class="footquote">
+                <h6>“For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.”</h6>
+                <p2>~John 3:16~</p2>
+                </div>
+            </div>
+            <p2>MCG 2024; All Rights Reserved</p2>
+        </footer>
+<!--        SHOW/HIDE MENU SCRIPT-->
+        <script>
+            var navLinks = document.getElementById("navLinks")
+            
+            function showMenu(){
+                navLinks.style.right = "0"
+                
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200"
+                
+            }
+        </script>
+    </body>
+</html>
